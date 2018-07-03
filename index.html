@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Sawyer Zincone Full-Stack Developer</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
+    <script src="js/isotope.pkgd.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Oswald:300|Rubik+Mono+One" rel="stylesheet"> 
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
+</head>
+<body>
+
+    <!-- Main Container -->
+    <div class="container main-container">
+
+        <!-- Particle JS BG-->
+        <div id="particles-js"></div>
+
+        <!-- Navbar -->
+        <div class="row">
+            <nav class="navbar navbar-expand-sm navbar-dark shadow fixed-top">
+                <!-- Brand -->
+                <a class="navbar-brand" href="#">Zincone</a>
+                
+                <!-- Links -->
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                    <a class="nav-link" href="#about">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#skills">Skills</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contact">Contact</a>
+                    </li>
+                </ul>
+                    <p class="nav navbar-nav ml-auto w-100 justify-content-end nav-email">szincone.work@gmail.com</p>
+            </nav> 
+        </div>
+        
+        <!-- Jumbotron -->
+        <div class="container-fluid mt-5">
+            <div class="row">
+                <div class="col-12">
+                    <div class="jumbotron jumbotron-fluid text-center">          
+                            <h1 class="display-4">Sawyer Zincone</h1>
+                            <h4 class="sub align-middle"><i class="fa fa-life-ring align-middle"></i> Full-Stack Developer <i class="fa fa-life-ring align-middle"></i></h4>
+                            <ul class="icons d-flex flex-wrap col-12 justify-content-center mt-4 pt-3">
+                                <li class="px-3"><a target="_blank" href="https://github.com/szincone" class="fa fa-github d-flex"></a></li>
+                                <li class="px-3"><a target="_blank" href="https://www.linkedin.com/in/szincone/" class="fa fa-linkedin d-flex"></a></li>
+                                <li class="px-3"><a target="_blank" href="mailto:szincone.work@gmail.com" class="more scrolly fa fa-envelope d-flex"></a></li>
+                            </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <!-- About -->
+        <div class="row justify-content-center about rounded-top p-5 mt-5" id="about">
+            <div class="col-5 text-center mx-auto">
+                <h1>About Me</h1>
+                <h4>My name is Sawyer Zincone and I am a full-stack developer with a passion for meaningful UI design, writing clean & efficient code, and collaboration.</h4>
+                <h4>I enjoy tackling complex problems and turning them into simple, easy-to-understand designs.</h4>
+                <h4>I am a former teacher math teacher who has a deep love for making things that make a difference. When I'm not coding I enjoy playing guitar, working out, or relaxing with my wife and cats.</h4>
+                <i class="fa fa-hand-spock-o align-middle mt-4"></i>
+            </div>
+            <div class="col-5 pt-5 img-about">
+                <img src="img/zincone_profile_June6_18_small.jpg" class="img-fluid rounded-circle shadow mx-auto" alt="A Picture of Sawyer Zincone.">
+            </div>
+        </div>
+
+        <!-- Skills -->
+        <div class="row justify-content-center skills" id="skills">
+                <div class="col-12 d-flex flex-column flex-wrap align-content-center iso-skills">
+                    <h1 class="text-center mt-3">Skills and Qualifications</h1>
+                    <div id="filters" class="btn-group btn-group-lg btn-group-toggle d-flex justify-content-center">  
+                        <button class="btn btn-dark" data-filter="*">Show all</button>
+                        <button class="btn btn-dark" data-filter=".language">Languages</button>
+                        <button class="btn btn-dark" data-filter=".web-framework">Web-Frameworks</button>
+                        <button class="btn btn-dark" data-filter=".database">Databases</button>
+                        <button class="btn btn-dark" data-filter=".front-end">Front-End</button>
+                        <button class="btn btn-dark" data-filter=".back-end">Back-End</button>
+                        <button class="btn btn-dark" data-filter=".other">Other</button>
+                        </div>
+                        
+                        <div id="sorts" class="btn-group btn-group-lg d-flex justify-content-center"> 
+                            <button class="btn btn-dark" data-sort-by="original-order">Original Order</button>
+                            <button class="btn btn-dark" data-sort-by="name">Name</button>
+                            <button class="btn btn-dark" data-sort-by="symbol">Symbol</button>
+                            <button class="btn btn-dark" data-sort-by="number">Number</button>
+                            <button class="btn btn-dark" data-sort-by="weight">Weight</button>
+                            <button class="btn btn-dark" data-sort-by="category">Category</button>
+                        </div>
+                        
+                        <div class="grid" id="#grid">
+                            <div class="element-item language object-oriented back-end" data-category="language">
+                                <h3 class="name">Python</h3>
+                                <p class="symbol">Py</p>
+                                <p class="number">80</p>
+                                <p class="weight">200.59</p>
+                            </div>
+                            <div class="element-item language lang2" data-category="language">
+                                <h3 class="name">Ruby</h3>
+                                <p class="symbol">Rb</p>
+                                <p class="number">52</p>
+                                <p class="weight">127.6</p>
+                            </div>
+                            <div class="element-item back-end language front-end" data-category="language">
+                                <h3 class="name">JavaScript</h3>
+                                <p class="symbol">Js</p>
+                                <p class="number">83</p>
+                                <p class="weight">208.980</p>
+                            </div>
+                            <div class="element-item front-end web-framework front-end clr-chng" data-category="web-framework">
+                                <h3 class="name">React</h3>
+                                <p class="symbol">R</p>
+                                <p class="number">82</p>
+                                <p class="weight">207.2</p>
+                            </div>
+                            <div class="element-item other clr-chng" data-category="other">
+                                <h3 class="name">Redux</h3>
+                                <p class="symbol">Rx</p>
+                                <p class="number">79</p>
+                                <p class="weight">196.967</p>
+                            </div>
+                            <div class="element-item back-end web-framework" data-category="web-framework">
+                                <h3 class="name">Node.js</h3>
+                                <p class="symbol">N</p>
+                                <p class="number">19</p>
+                                <p class="weight">39.0983</p>
+                            </div>
+                            <div class="element-item back-end database" data-category="database">
+                                <h3 class="name">MongoDB</h3>
+                                <p class="symbol">Mg</p>
+                                <p class="number">11</p>
+                                <p class="weight">22.99</p>
+                            </div>
+                            <div class="element-item other" data-category="other">
+                                <h3 class="name">Bash Shell</h3>
+                                <p class="symbol">Bs</p>
+                                <p class="number">48</p>
+                                <p class="weight">112.411</p>
+                            </div>
+                            <div class="element-item back-end database back-end2" data-category="database">
+                                <h3 class="name">Selenium</h3>
+                                <p class="symbol">Se</p>
+                                <p class="number">20</p>
+                                <p class="weight">40.078</p>
+                            </div>
+                            <div class="element-item front-end language lang2" data-category="language">
+                                <h3 class="name">HTML</h3>
+                                <p class="symbol">Ht</p>
+                                <p class="number">75</p>
+                                <p class="weight">186.207</p>
+                            </div>
+                            <div class="element-item language front-end clr-chng " data-category="language">
+                                <h3 class="name">CSS</h3>
+                                <p class="symbol">Cs</p>
+                                <p class="number">81</p>
+                                <p class="weight">204.383</p>
+                            </div>
+                            <div class="element-item other" data-category="other">
+                                <h3 class="name">Git</h3>
+                                <p class="symbol">G</p>
+                                <p class="number">51</p>
+                                <p class="weight">121.76</p>
+                            </div>
+                            <div class="element-item back-end other back-end2" data-category="other">
+                                <h3 class="name">REST</h3>
+                                <p class="symbol">Rs</p>
+                                <p class="number">27</p>
+                                <p class="weight">58.933</p>
+                            </div>
+                            <div class="element-item front-end other" data-category="other">
+                                <h3 class="name">jQuery</h3>
+                                <p class="symbol">Jq</p>
+                                <p class="number">70</p>
+                                <p class="weight">173.054</p>
+                            </div>
+                            <div class="element-item back-end web-framework back-end2" data-category="web-framework">
+                                <h3 class="name">Express.js</h3>
+                                <p class="symbol">Ex</p>
+                                <p class="number">18</p>
+                                <p class="weight">39.948</p>
+                            </div>
+                            <div class="element-item front-end web-framework" data-category="web-framework">
+                                <h3 class="name">Bootstrap</h3>
+                                <p class="symbol">Bt</p>
+                                <p class="number">7</p>
+                                <p class="weight">14.007</p>
+                            </div>
+                            <div class="element-item back-end web-framework back-end2" data-category="web-framework">
+                                <h3 class="name">Flask</h3>
+                                <p class="symbol">F</p>
+                                <p class="number">92</p>
+                                <p class="weight">238.029</p>
+                            </div>
+                            <div class="element-item back-end web-framework" data-category="web-framework">
+                                <h3 class="name">Django</h3>
+                                <p class="symbol">Dj</p>
+                                <p class="number">94</p>
+                                <p class="weight">244.33</p>
+                            </div>
+                            <div class="element-item other" data-category="other">
+                                <h3 class="name">TensorFlow</h3>
+                                <p class="symbol">Tf</p>
+                                <p class="number">106</p>
+                                <p class="weight">282.21</p>
+                            </div>
+                            <div class="element-item other clr-chng" data-category="other">
+                                <h3 class="name">Blockchain</h3>
+                                <p class="symbol">Bc</p>
+                                <p class="number">96</p>
+                                <p class="weight">253.34</p>
+                            </div>
+                        </div>
+                </div>
+            </div>
+
+        <!-- Contact -->
+        <div class="row d-flex justify-content-center contact p-5" id="contact">
+                <div class="col-10 text-center">
+                    <div class="contact-box mx-auto p-5">
+                        <h1>Contact Me</h1>
+                        <div class="contact-box border-bottom">
+                            <p>I would love to hear from you, whether you're trying to collaborate, hire me, or simply just stopping by!</p>
+                        </div>
+                        <div class="row d-flex justify-content-center p-3 border-bottom">
+                            <div class="contact-box col-3 p-3">
+                                <h4>Email</h4>
+                                <a target="_blank" href="mailto:szincone.work@gmail.com" class="fa fa-envelope align-items-middle"></a>
+                            </div>
+                            <div class="contact-box col-3 p-3">
+                                <h4>Portfolio</h4>
+                                <a target="_blank" href="https://github.com/szincone" class="fa fa-github align-items-middle"></a>
+                            </div>
+                            <div class="contact-box col-3 p-3">
+                                <h4>Linkedin</h4>
+                                <a target="_blank" href="https://www.linkedin.com/in/szincone/" class="fa fa-linkedin align-items-middle"></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        <!-- Footer -->
+        <footer class="row p-1">
+            <div class="col-12 d-flex justify-content-end align-items-middle">
+                <p>Sawyer Zincone szincone.work@gmail.com 2018</p>
+            </div>
+        </footer>
+
+    </div>
+    <!-- End of Main Div -->
+
+    <script src="js/jquery-3.3.1.min.js"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script type="text/javascript" src="js/particles.js"></script>
+    <script src="js/isotope.pkgd.js"></script>
+    <script type="text/javascript" src="js/app.js"></script>
+    <script src="js/index.js"></script>
+
+</body>
+</html>

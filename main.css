@@ -1,0 +1,311 @@
+body {
+    height: 100vh;
+    
+}
+
+html {
+    font-size: 62.5%;
+}
+
+.main-container {
+    max-width: 880px;
+}
+
+.icons {
+    color: white;
+    font-size: 5rem;
+    text-align: center;
+    list-style: none;
+    margin: 0 0 0.5vw;
+    padding: 0;
+}
+
+.icons a {
+    color: white;
+}
+.icons a:hover {
+    color: #eac435;
+    opacity:0.9;
+    text-decoration: none;
+}
+
+nav {
+    font-size: 2rem;
+    font-family: 'Oswald', sans-serif;
+    font-weight: bold;
+    background-color: #d7263d !important;
+}
+
+nav .navbar-brand {
+    font-size: 2.5rem;
+    font-family: 'Rubik Mono One', sans-serif;
+}
+
+nav ul a {
+    color: white !important;
+    opacity: .85;
+}
+nav ul a:hover {
+    color: white !important;
+    opacity: .65;
+}
+.nav-email{
+    color: white;
+    opacity: .9;
+}
+
+.jumbotron {
+    margin-top: 90px;
+    color: white;
+}
+
+.jumbotron h1 {
+    font-size: 5rem;
+    font-family: 'Rubik Mono One', sans-serif;
+}
+.jumbotron h4 {
+    font-size: 3rem;
+    font-family: 'Oswald', sans-serif;
+}
+
+.fa-circle {
+    font-size: 1rem !important;
+}
+
+.fa-hand-spock-o {
+    font-size: 2rem !important;
+}
+
+.container-fluid .jumbotron  {
+    background: transparent;
+}
+
+.about {
+    background: white;
+}
+
+.about h1 {
+    font-family: 'Rubik Mono One', sans-serif;
+    font-size: 2.25rem;
+    padding-top: 55px;
+}
+.about h4 {
+    font-family: 'Oswald', sans-serif;
+    font-size: 2rem;
+}
+
+.about .img-about {
+    padding-top: 55px !important;
+}
+
+.skills {
+    background: #d7263d;
+    color: white;
+    height: 700px;
+}
+.skills h1 {
+    padding-top: 55px !important;
+}
+
+.contact {
+    height: 400px;
+}
+
+.contact-box a {
+    color: black;
+    font-size: 8rem;
+}
+.contact-box a:hover{
+    text-decoration: none;
+    color: #eac435;
+}
+
+.contact-box h1 {
+    font-family: 'Rubik Mono One', sans-serif;
+    font-size: 2.25rem;
+}
+
+.contact-box h4 {
+    font-family: 'Oswald', sans-serif;
+    font-size: 2rem;
+    font-weight: bold;
+}
+.contact-box p {
+    font-size: 1.8rem;
+    font-family: 'Oswald', sans-serif;
+}
+
+footer {
+    background: #d7263d;
+    color: white;
+    font-size: 1.6rem;
+    font-family: 'Oswald', sans-serif;
+}
+
+
+#particles-js canvas {
+    display: block;
+    vertical-align: bottom;
+    -webkit-transform: scale(1);
+    -ms-transform: scale(1);
+    transform: scale(1);
+    opacity: 1;
+    -webkit-transition: opacity .8s ease, -webkit-transform 1.4s ease;
+    transition: opacity .8s ease, transform 1.4s ease
+}
+
+#particles-js {
+    width: 100%;
+    height: 100%;
+    background: #02182b;
+    position: fixed;
+    z-index: -10;
+    top: 0;
+    left: 0
+}
+
+
+
+/* Isotope Css */
+.btn {
+    background: #02182b !important;
+    display: flex;
+    padding: 2rem;
+    font-size: 2rem !important;
+    font-family: 'Oswald', sans-serif;
+    cursor: pointer;
+}
+.btn:hover {
+    background: #eac435 !important;
+    color: black !important;
+    /* opacity: .8; */
+}
+
+.skills h1 {
+    font-family: 'Rubik Mono One', sans-serif;
+    font-size: 2.25rem;
+}
+
+.contact {
+    background: white;
+}
+
+/* ---- button-group ---- */
+
+.btn-group {
+margin-top: 1vh;
+display: flex;
+}
+
+@media (max-width: 800px) {
+    .skills {
+        display: none !important;
+    }
+    #contact {
+        display: none !important;
+    }
+    .about .img-about {
+        display: none !important;
+    }
+}
+
+
+
+/* ---- isotope ---- */
+
+.grid {
+border: 1px solid black;
+display: flex;
+justify-content: center;
+margin-top: 2vh;
+}
+
+/* clear fix */
+.grid:after {
+content: '';
+display: flex;
+clear: both;
+}
+
+/* ---- .element-item ---- */
+
+.element-item {
+/* position: relative; */
+/* float: left; */
+width: 100px;
+height: 100px;
+margin: 5px;
+padding: 10px;
+border: 1px solid black;
+/* background: #888;
+color: #262524; */
+}
+
+.element-item > * {
+margin: 0;
+padding: 0;
+}
+
+.element-item .name {
+position: absolute;
+left: 10px;
+top: 60px;
+text-transform: none;
+letter-spacing: 0;
+font-size: 1.5rem;
+font-weight: normal;
+font-family: "Oswald", sans-serif;
+text-shadow: 1px 1px 0 black;
+}
+
+.element-item .symbol {
+position: absolute;
+left: 10px;
+top: 0px;
+font-size: 42px;
+font-weight: bold;
+color: white;
+text-shadow: 1px 1px 0 black;
+}
+
+.element-item .number {
+position: absolute;
+right: 8px;
+top: 5px;
+text-shadow: 1px 1px 0 black;
+}
+
+.element-item .weight {
+position: absolute;
+left: 10px;
+top: 76px;
+font-size: 1.2rem;
+text-shadow: 1px 1px 0 black;
+}
+
+/* // Color Bank
+
+/* Theme Color 
+@RustyRed: #d7263d;
+@MaastrichtBlue: #02182b;
+@VividCerulean: #0197f6;
+
+// Element-Item colors
+@PinkOrange: #ff9b71;
+@PastelYellow: #fffd82;
+@TiffanyBlue: #17bebb;
+@Ube: #8789c0;
+@VividBurgandy: #a51c30;
+@YellowOrange: #ffbc42;
+@WillpowerOrange: #f75c03;
+*/
+
+
+.element-item.other        { background: #306b34; color: white; }
+.element-item.web-framework      { background: #ff9b71; color: white; }
+.element-item.language        { background: #eac435; color: white; }
+.element-item.front-end     { background: #084c61; color: white; }
+.element-item.back-end { background: #eac435; color: white; }
+.element-item.lang2       { background: #f56416; color: white; }
+.element-item.back-end2        { background: #a51c30; color: white; }
+.element-item.clr-chng        { background: #541388; color: white; }
