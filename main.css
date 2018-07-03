@@ -204,11 +204,16 @@ display: flex;
     #contact {
         display: none !important;
     }
-    .about .img-about {
+    .about {
         display: none !important;
     }
+    .footer {
+        display: none !important;
+    }
+    nav {
+        display:none !important;
+    }
 }
-
 
 
 /* ---- isotope ---- */
